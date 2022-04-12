@@ -45,9 +45,8 @@ class VimAT824650 < Formula
                           "--enable-perlinterp",
                           "--enable-rubyinterp",
                           "--enable-python3interp",
-                          "--with-features=huge",
-                          "--enable-gui=gtk",
-                          "--with-x",
+                          "--enable-gui=no",
+                          "--without-x",
                           "--enable-luainterp",
                           "--with-lua-prefix=#{Formula["lua"].opt_prefix}"
     system "make"
